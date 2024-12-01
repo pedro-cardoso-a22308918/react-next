@@ -19,4 +19,7 @@
     gap: 10px;
 }
 
-/*TODO: FINISH THIS*/
+.nav a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
