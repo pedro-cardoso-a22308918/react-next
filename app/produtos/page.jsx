@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Card from '../../components/Card/Card'; 
 import produtosData from '@/private/data/produtos.js'; 
+import styles from '../../components/Card/Card.module.css';
 
 
 export default function Produtos() {
@@ -55,8 +56,8 @@ export default function Produtos() {
           />
         ))}
       </div>
-      <div className="cesto">
-        <h1 className="product-cesto">Preço Total: 0.00€</h1>
+      <div className={styles.cesto}>
+        <h1 className={styles['product-cesto']}>Preço Total: 0.00€</h1>
       </div>
     </div>
   );
