@@ -45,7 +45,7 @@ export default function Produtos() {
 
   return (
     <div>
-      <h1>Produtos</h1>
+      <h1 className='text-center'>Produtos</h1>
       <div className="grid-container">
         {produtosData.map(produto => (
           <Card 

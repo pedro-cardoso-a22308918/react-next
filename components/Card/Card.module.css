@@ -14,7 +14,6 @@
     font-weight: bold;
 }
 
-
 .element-header {
     color: white;
     margin: 0;
@@ -77,6 +76,7 @@
     font-style: italic;
     margin-bottom: 40px;
 }
+
 .cesto{
     background-color: rgb(128,4,124);
     padding: 10px;
