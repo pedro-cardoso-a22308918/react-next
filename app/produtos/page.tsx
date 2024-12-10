@@ -1,6 +1,5 @@
 "use client";
 
-import react from 'react';
 import Card from '@/components/Card/Card'; 
 import produtosData from '@/private/data/produtos.json'; 
 import  { Produto } from "@/app/models/interfaces";

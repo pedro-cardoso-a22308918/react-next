@@ -1,5 +1,4 @@
 'use client'
-import React from 'react';
 import tecnologias from '@/private/data/tecnologias.json';
 import Card from '../../components/Card/Card'; 
 import { Produto } from '@/app/models/interfaces';
