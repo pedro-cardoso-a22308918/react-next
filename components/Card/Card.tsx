@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './Card.module.css'; 
+import { Produto } from '@/app/models/interfaces';
 
-const Card = ({ produto, adicionarAoCesto, removerDoCesto }) => {
+interface CardProps {
+  produto: Produto;
+}
+
+const Card: React.FC<CardProps> = ({ produto }) => {
   return (
     <section className={styles['grid-item']}> {}
       <h1 className={styles['title-product']}>{produto.title}</h1> {}
@@ -9,8 +14,6 @@ const Card = ({ produto, adicionarAoCesto, removerDoCesto }) => {
       <p>Custo total: {produto.price}€</p>
       <p className={styles['description-product']}>{produto.description}</p> {}
       
-      <button onClick={() => adicionarAoCesto(produto)}>+ Adicionar ao cesto</button>
-      <button onClick={() => removerDoCesto(produto)}>- Remover do cesto</button>
     </section>
   );
 };
