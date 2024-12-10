@@ -6,7 +6,7 @@ import { Produto } from '@/app/models/interfaces';
 import styles from '../../components/Card/Card.module.css';
 
 //TODO: Por resolver nao encontra as imagens
-const Tecnologias = () => {
+export default function Tecnologias() {
   return (
     <div>
       <h1 className="text-center">Tecnologias que Aprendi</h1>
@@ -20,5 +20,3 @@ const Tecnologias = () => {
     </div>
   );
 };
-
-export default Tecnologias;
