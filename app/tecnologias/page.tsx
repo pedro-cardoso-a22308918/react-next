@@ -9,10 +9,8 @@ export default function Tecnologias() {
     <div>
       <h1 className="text-center">Tecnologias que Aprendi</h1>
       <div className="grid-container">
-        {JSON.parse(JSON.stringify(tecnologias)).map((tecnologias: Produto) => (
-
-          <Card key={tecnologias.id} produto={tecnologias} />
-
+        {tecnologias.map((produto: Produto) => (
+          <Card key={produto.id} produto={produto} /> 
         ))} 
       </div>
     </div>
