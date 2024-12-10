@@ -2,7 +2,6 @@
 import tecnologias from '@/private/data/tecnologias.json';
 import Card from '../../components/Card/Card'; 
 import { Produto } from '@/app/models/interfaces';
-import styles from '../../components/Card/Card.module.css';
 
 //TODO: Por resolver nao encontra as imagens
 export default function Tecnologias() {
