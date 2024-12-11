@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 
-# LINK:[https://react-next-f9pws6m4z-pedro-cardoso-a22308918s-projects.vercel.app/](https://react-next-diw.vercel.app/)
+# LINK:react-next-diw.vercel.app
