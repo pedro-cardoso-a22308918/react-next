@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header title="Programadores como alterar isto para cada SITE" />
-        <main>{children}</main>
+          <main>{children}</main>
         <Footer />
       </body>
     </html>

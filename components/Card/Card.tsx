@@ -11,9 +11,12 @@ const Card: React.FC<CardProps> = ({ produto }) => {
     <section className={styles['grid-item']}> {}
       <h1 className={styles['title-product']}>{produto.title}</h1> {}
       <img src={produto.image} alt={produto.title} />
-      <p>Custo total: {produto.price}€</p>
-      <p className={styles['description-product']}>{produto.description}</p> {}
       
+      {produto.type !== 'technology' && (
+        <p>Custo total: {produto.price}€</p>
+      )}
+      
+      <p className={styles['description-product']}>{produto.description}</p> {}
     </section>
   );
 };
