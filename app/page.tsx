@@ -1,8 +1,9 @@
 export default function Home() {
   return(
     <section>
-      <h1>Bem vindo à Página dos Programadores</h1>
-      <p>Esta é a pagina inicial da aplicação.</p>
+      <h1 className="text-center" style={{ fontSize: '2.5rem' }}>Bem vindo à Página dos Programadores</h1>
+      <p className="text-center" style={{ fontSize: '1.3rem' }}>Esta é a pagina inicial da aplicação.</p>
+      <p className="text-center" style={{ fontSize: '1.3rem' }}>A pagina Sobre e a pagina programadores estão em construção.</p>
     </section>
    );
 
