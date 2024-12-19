@@ -4,7 +4,7 @@ export interface Produto {
     description: string;
     price?: number;
     image: string;
-    type: string;
+    type?: string;
   }
 
 export interface Tecnologia {

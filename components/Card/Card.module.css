@@ -104,3 +104,26 @@
     margin-top: 20px;
     grid-column: 1 / -1;
 }
+
+.search-Product
+{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.btn-add
+{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightgray;
+}

@@ -17,6 +17,9 @@ const Card: React.FC<CardProps> = ({ produto }) => {
       )}
       
       <p className={styles['description-product']}>{produto.description}</p> {}
+
+      <button className={styles['btn-add']} >+Adicionar ao cesto</button>
+
     </section>
   );
 };
