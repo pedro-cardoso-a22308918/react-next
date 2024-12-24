@@ -11,7 +11,7 @@ export default function Produtos() {
   const [filteredData, setFilteredData] = useState<Produto[]>([]);
   const [cart, setCart] = useState<Produto[]>([]);
 
-  //falta terminar a parte do carrinho
+  //falta terminar a parte do carrinho(guardar no localStorage e mostrar o carrinho)
   useEffect(() =>{
     const newFilteredData = produtosData.filter((Produto) => {
       return Produto.title.toLowerCase().includes(search.toLowerCase())
@@ -19,6 +19,11 @@ export default function Produtos() {
     setFilteredData(newFilteredData);
 
   }, [search,produtosData])
+
+  const addToCart = (produto: Produto) => {
+    setCart((prevCart) => [...prevCart, produto]);
+    console.log(cart);//debug
+  };
 
   return (
     <div>
@@ -31,7 +36,7 @@ export default function Produtos() {
           onChange={(e) => setSearch(e.target.value)}
         />
         {filteredData.map((produto: Produto) => (
-          <Card key={produto.id} produto={produto} />
+          <Card key={produto.id} produto={produto} addToCart={addToCart}/>
         ))}
       </div>
       <div className={styles.cesto}>

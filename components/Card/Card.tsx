@@ -4,9 +4,10 @@ import { Produto } from '@/app/models/interfaces';
 
 interface CardProps {
   produto: Produto;
+  addToCart: (produto: Produto) => void;
 }
 
-const Card: React.FC<CardProps> = ({ produto }) => {
+const Card: React.FC<CardProps> = ({ produto, addToCart }) => {
   return (
     <section className={styles['grid-item']}> {}
       <h1 className={styles['title-product']}>{produto.title}</h1> {}
@@ -18,7 +19,7 @@ const Card: React.FC<CardProps> = ({ produto }) => {
       
       <p className={styles['description-product']}>{produto.description}</p> {}
 
-      <button className={styles['btn-add']} >+Adicionar ao cesto</button>
+      <button className={styles['btn-add']} onClick={() => addToCart(produto)}>+Adicionar ao cesto</button>
 
     </section>
   );
