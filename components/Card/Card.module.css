@@ -127,3 +127,26 @@
     padding: 10px;
     background-color: lightgray;
 }
+
+.btn-comprar 
+{
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    background-color: #252A34;
+    color: #FF2E63;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    grid-column: 1 / -1;  /*ocupa todas as colunas do grid */
+  }
+  
+  
+.btn-comprar:hover {
+    background-color: #FF2E63;
+    color: white;
+}
