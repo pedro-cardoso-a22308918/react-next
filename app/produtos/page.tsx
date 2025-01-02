@@ -4,7 +4,7 @@ import Card from '@/components/Card/Card';
 import produtosData from '@/private/data/produtos.json'; 
 import  { Produto } from "@/app/models/interfaces";
 import styles from '../../components/Card/Card.module.css';
-import { use, useEffect, useState } from 'react';
+import { /*use,*/ useEffect, useState } from 'react';
 
 export default function Produtos() {
   const [search, setSearch] = useState("");
@@ -69,8 +69,8 @@ export default function Produtos() {
         throw new Error(response.statusText);
       }
       return response.json();
-    }).then((response) => {
-      setCart([])
+    /*}).then((response) => {
+      setCart([])*/
     }).catch(() => {
       console.log("erro ao comprar")
     })
